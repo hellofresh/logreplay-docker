@@ -53,4 +53,4 @@ RUN go build -o logreplay logreplay.go
 # - mounting S3 bucket using s3fs-fuse,
 # - starting filebeat agent.
 WORKDIR /root/golang/src/github.com/hellofresh/logreplay
-
+CMD /root/golang/src/github.com/hellofresh/logreplay/logreplay
