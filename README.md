@@ -25,7 +25,7 @@ The container can be run in two different modes:
           -e "AWS_ACCESS_KEY_ID=..." \
           -e "AWS_SECRET_ACCESS_KEY=..." \
           -e "S3_BUCKET=<S3 bucket to mount>" \
-          --name replay \
+          --name logreplay \
           my/logreplay replay --mount-only
 
 **Re-play logs to ES:**
@@ -43,6 +43,6 @@ The container can be run in two different modes:
           -e "ES_TYPE=<type field as part of Filebeat configuration>" \
           -e "ES_HOST=http://<ElasticSearch host>:<ElasticSearch port>" \
           -e "ES_INDEX=<basename of the ElasticSearch index to use>" \
-          --name replay \
+          --name logreplay \
           my/logreplay replay
 
