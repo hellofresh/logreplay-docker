@@ -27,6 +27,8 @@ The container can be run in two different modes:
           -e "S3_BUCKET=<S3 bucket to mount>" \
           --name logreplay \
           my/logreplay replay --mount-only
+          
+*Note:* The contents of the mounted S3 bucket will then be accessible under `/mnt/s3`
 
 **Re-play logs to ES:**
 
